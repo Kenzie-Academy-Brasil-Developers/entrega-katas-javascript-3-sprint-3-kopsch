@@ -1,15 +1,17 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
 function showResults(n) {
-    // if (n === 0) {
-        let body = document.getElementById("body")
-        let p = document.createElement("p")
-        let value = document.createTextNode(n)
+    let body = document.getElementById("body")
+    let p = document.createElement("p")
+    let value = document.createTextNode(n)
+    let comma = document.createTextNode(", ")
+    if (n === 0) {
         p.appendChild(value)
         body.appendChild(p)
-    // } else {
-    //     p.innerText(", " + n) 
-    // }
+    } else {
+        p.innerText += comma
+        p.innerText += value
+    }
 
 } 
 
@@ -162,12 +164,13 @@ function kata18() {
 function rectangle() {
    body = document.getElementById("body")
    div = document.createElement("div")
-   br = document.createElement("br")
+   body.style.display = "flex"
+   body.style.flexFlow = "row wrap"
    div.style.width = "100px"
    div.style.height = "20px"
+   div.style.margin = "10px"
    div.style.backgroundColor = "gray"
    body.appendChild(div)
-   body.appendChild(br)
 }
 
 
@@ -182,12 +185,13 @@ function kataBonus2() {
     for (let i = 105; i <= 200; i+=5) {
         body = document.getElementById("body")
         div = document.createElement("div")
-        br = document.createElement("br")
+        body.style.display = "flex"
+        body.style.flexFlow = "row wrap"
         div.style.width = i + "px"
         div.style.height = "20px"
+        div.style.margin = "10px"
         div.style.backgroundColor = "gray"
         body.appendChild(div)
-        body.appendChild(br)
     }
 }
 
@@ -195,36 +199,38 @@ function kataBonus3() {
     for (let i = 0; i <= sampleArray.length; i++) {
         body = document.getElementById("body")
         div = document.createElement("div")
-        br = document.createElement("br")
+        body.style.display = "flex"
+        body.style.flexFlow = "row wrap"
         div.style.width = sampleArray[i] + "px"
         div.style.height = "20px"
+        div.style.margin = "10px"
         div.style.backgroundColor = "gray"
         body.appendChild(div)
-        body.appendChild(br)
     }
 }
 
 function kataBonus4() {
     for (let i = 0; i <= sampleArray.length; i++) {
 
+        body = document.getElementById("body")
+        div = document.createElement("div")
+        body.style.display = "flex"
+        body.style.flexFlow = "row wrap"
+
         if (i % 2 === 0){
-            body = document.getElementById("body")
-            div = document.createElement("div")
-            br = document.createElement("br")
             div.style.width = sampleArray[i] + "px"
             div.style.height = "20px"
+            div.style.margin = "10px"
             div.style.backgroundColor = "gray"
             body.appendChild(div)
-            body.appendChild(br)
+            
         } else {
-            body = document.getElementById("body")
-            div = document.createElement("div")
-            br = document.createElement("br")
             div.style.width = sampleArray[i] + "px"
             div.style.height = "20px"
+            div.style.margin = "10px"
             div.style.backgroundColor = "red"
             body.appendChild(div)
-            body.appendChild(br)
+
         }  
     }
 }
@@ -232,24 +238,23 @@ function kataBonus4() {
 function kataBonus5() {
     for (let i = 0; i <= sampleArray.length; i++) {
 
+        body = document.getElementById("body")
+        div = document.createElement("div")
+        body.style.display = "flex"
+        body.style.flexFlow = "row wrap"
+
         if (sampleArray[i] % 2 === 0){
-            body = document.getElementById("body")
-            div = document.createElement("div")
-            br = document.createElement("br")
             div.style.width = sampleArray[i] + "px"
             div.style.height = "20px"
             div.style.backgroundColor = "red"
+            div.style.margin = "10px"
             body.appendChild(div)
-            body.appendChild(br)
         } else {
-            body = document.getElementById("body")
-            div = document.createElement("div")
-            br = document.createElement("br")
             div.style.width = sampleArray[i] + "px"
             div.style.height = "20px"
             div.style.backgroundColor = "gray"
+            div.style.margin = "10px"
             body.appendChild(div)
-            body.appendChild(br)
         }  
     }
 }
