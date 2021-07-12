@@ -16,19 +16,28 @@ function showResults(n) {
     
 // }
 
+function titleKata(n) {
+    h2 = document.createElement("h2")
+    subtitle = document.createTextNode(`Kata ${n}`)
+    h2.appendChild(subtitle)
+    document.body.appendChild(h2)
+}
+
 h1 = document.createElement("h1")
 title = document.createTextNode("Resolução de Katas")
 h1.appendChild(title)
 document.body.appendChild(h1)
 
 function kata1() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 1")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(1)
     for (let i = 0; i <= 25; i++) {
-        array += " " + i
+        if (i === 0) {
+            array+= i
+        } else {
+            array += ", " + i
+        }
+        
     }
     showResults(array)
 }
@@ -36,13 +45,14 @@ function kata1() {
 kata1()
 
 function kata2() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 2")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(2)
     for (let i = 25; i >= 0; i--) {
-        array += " " + i
+        if (i === 25) {
+            array+= i
+        } else {
+            array += ", " + i
+        }
     }
     showResults(array)
 }
@@ -50,13 +60,14 @@ function kata2() {
 kata2()
 
 function kata3() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 3")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(3)
     for (let i = -25; i <= -1; i++) {
-        array += " " + i
+        if (i === -25) {
+            array+= i
+        } else {
+            array += ", " + i
+        }
     }
     showResults(array)
 }
@@ -64,13 +75,14 @@ function kata3() {
 kata3()
 
 function kata4() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 4")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(4)
     for (let i = -1; i >= -25; i--) {
-        array += " " + i
+        if (i === -1) {
+            array+= i
+        } else {
+            array += ", " + i
+        }
     }
     showResults(array)
 }
@@ -78,14 +90,15 @@ function kata4() {
 kata4()
 
 function kata5() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 5")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(5)
     for (let i = -25; i <= 25; i++) {
         if (i % 2 !== 0) {
-            array += " " + i
+            if (i === -25) {
+                array+= i
+            } else {
+                array += ", " + i
+            }
         }
     }
     showResults(array)
@@ -94,14 +107,15 @@ function kata5() {
 kata5()
 
 function kata6() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 6")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(6)
     for (let i = 0; i <= 100; i++) {
         if (i % 3 === 0) {
-            array += " " + i
+            if (i === 0) {
+                array+= i
+            } else {
+                array += ", " + i
+            }
         }
     }
     showResults(array)
@@ -110,14 +124,15 @@ function kata6() {
 kata6()
 
 function kata7() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 7")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(7)
     for (let i = 0; i <= 100; i++) {
         if (i % 7 === 0) {
-            array += " " + i
+            if (i === 0) {
+                array+= i
+            } else {
+                array += ", " + i
+            }
         }
     }
     showResults(array)
@@ -126,14 +141,15 @@ function kata7() {
 kata7()
 
 function kata8() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 8")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(8)
     for (let i = 100; i >= 0; i--) {
         if (i % 7 === 0 || i % 3 === 0) {
-            array += " " + i
+            if (i === 99) {
+                array+= i
+            } else {
+                array += ", " + i
+            }
         }
     }
     showResults(array)
@@ -142,14 +158,15 @@ function kata8() {
 kata8()
 
 function kata9() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 9")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(9)
     for (let i = 0; i <= 100; i++) {
         if (i % 5 === 0 && i % 2 !== 0) {
-            array += " " + i
+            if (i === 5) {
+                array+= i
+            } else {
+                array += ", " + i
+            }
         }
     }
     showResults(array)
@@ -158,13 +175,14 @@ function kata9() {
 kata9()
 
 function kata10() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 10")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(10)
     for (let i = 0; i < sampleArray.length; i++) {
-        array += " " + sampleArray[i]
+        if (i === 0) {
+            array+= sampleArray[i]
+        } else {
+            array += ", " + sampleArray[i]
+        }
     }
     showResults(array)
 }
@@ -172,14 +190,15 @@ function kata10() {
 kata10()
 
 function kata11() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 11")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(11)
     for (let i = 0; i < sampleArray.length; i++) {
         if(sampleArray[i] % 2 === 0) {    
-            array += " " + sampleArray[i]
+            if (sampleArray[i] === 244) {
+                array+= sampleArray[i]
+            } else {
+                array += ", " + sampleArray[i]
+            }
         }
     }
     showResults(array)
@@ -188,14 +207,15 @@ function kata11() {
 kata11()
 
 function kata12() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 12")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(12)
     for (let i = 0; i < sampleArray.length; i++) {
         if(sampleArray[i] % 2 !== 0) {    
-            array += " " + sampleArray[i]
+            if (i === 0) {
+                array+= sampleArray[i]
+            } else {
+                array += ", " + sampleArray[i]
+            }
         }
     }
     showResults(array)
@@ -204,14 +224,15 @@ function kata12() {
 kata12()
 
 function kata13() {
-    let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 13")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    let array = ""
+    titleKata(13)
     for (let i = 0; i < sampleArray.length; i++) {
         if(sampleArray[i] % 8 === 0) {    
-            array += " " + sampleArray[i]
+            if (sampleArray[i] === 712) {
+                array+= sampleArray[i]
+            } else {
+                array += ", " + sampleArray[i]
+            }
         }
     }
     showResults(array)
@@ -222,13 +243,14 @@ kata13()
 function kata14() {
     let square = 0
     let array = []
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 14")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleKata(14)
     for (let i = 0; i < sampleArray.length; i++) {
         square = sampleArray[i]*sampleArray[i]   
-        array += " " + square
+        if (i === 0) {
+            array+= square
+        } else {
+            array += ", " + square
+        }
     }
     showResults(array)
 }
@@ -237,10 +259,7 @@ kata14()
 
 function kata15() {
     let sum = 0
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 15")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleKata(15)
     for (let i = 0; i < 20; i++) {
         sum += i
     }
@@ -251,10 +270,7 @@ kata15()
 
 function kata16() {
     let sum = 0
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 16")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleKata(16)
     for (let i = 0; i < sampleArray.length; i++) {
         sum += sampleArray[i]  
     }
@@ -265,10 +281,7 @@ kata16()
 
 function kata17() {
     let value = sampleArray.length, min = Infinity
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 17")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleKata(17)
     while (value--) {
         if (sampleArray[value] < min) {
             min = sampleArray[value]
@@ -282,10 +295,7 @@ kata17()
 
 function kata18() {
     let value = sampleArray.length, max = -Infinity
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata 18")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleKata(18)
     while (value--) {
         if (sampleArray[value] > max) {
             max = sampleArray[value]
@@ -300,6 +310,13 @@ kata18()
  * Daqui em diante são os bônus, por sua conta e risco
  */
 
+function titleBonusKata(n) {
+    h2 = document.createElement("h2")
+    subtitle = document.createTextNode(`Kata Bonus ${n}`)
+    h2.appendChild(subtitle)
+    document.body.appendChild(h2)
+}
+
 function rectangle() {
    let body = document.getElementById("body")
    let div = document.createElement("div")
@@ -313,10 +330,7 @@ function rectangle() {
 
 
 function kataBonus1() {
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata Bonus 1")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleBonusKata(1)
     for (let i = 0; i < 20; i++) {
         rectangle()
     }
@@ -325,10 +339,7 @@ function kataBonus1() {
 kataBonus1()
 
 function kataBonus2() {
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata Bonus 2")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleBonusKata(2)
     for (let i = 105; i <= 200; i+=5) {
         let body = document.getElementById("body")
         let div = document.createElement("div")
@@ -343,10 +354,7 @@ function kataBonus2() {
 kataBonus2()
 
 function kataBonus3() {
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata Bonus 3")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleBonusKata(3)
     for (let i = 0; i <= sampleArray.length; i++) {
         body = document.getElementById("body")
         div = document.createElement("div")
@@ -361,10 +369,7 @@ function kataBonus3() {
 kataBonus3()
 
 function kataBonus4() {
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata Bonus 4")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleBonusKata(4)
     for (let i = 0; i <= sampleArray.length; i++) {
 
         body = document.getElementById("body")
@@ -391,10 +396,7 @@ function kataBonus4() {
 kataBonus4()
 
 function kataBonus5() {
-    h2 = document.createElement("h2")
-    subtitle = document.createTextNode("Kata Bonus 5")
-    h2.appendChild(subtitle)
-    document.body.appendChild(h2)
+    titleBonusKata(5)
     for (let i = 0; i <= sampleArray.length; i++) {
 
         body = document.getElementById("body")
