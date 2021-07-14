@@ -40,6 +40,7 @@ function kata1() {
         
     }
     showResults(array)
+    return array
 }
 
 kata1()
@@ -55,6 +56,7 @@ function kata2() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata2()
@@ -70,6 +72,7 @@ function kata3() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata3()
@@ -85,6 +88,7 @@ function kata4() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata4()
@@ -102,6 +106,7 @@ function kata5() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata5()
@@ -119,6 +124,7 @@ function kata6() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata6()
@@ -136,6 +142,7 @@ function kata7() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata7()
@@ -153,6 +160,7 @@ function kata8() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata8()
@@ -170,6 +178,7 @@ function kata9() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata9()
@@ -185,6 +194,7 @@ function kata10() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata10()
@@ -202,6 +212,7 @@ function kata11() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata11()
@@ -219,6 +230,7 @@ function kata12() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata12()
@@ -236,6 +248,7 @@ function kata13() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata13()
@@ -253,6 +266,7 @@ function kata14() {
         }
     }
     showResults(array)
+    return array
 }
 
 kata14()
@@ -264,6 +278,7 @@ function kata15() {
         sum += i
     }
     showResults(sum)
+    return sum
 }
     
 kata15()
@@ -275,6 +290,7 @@ function kata16() {
         sum += sampleArray[i]  
     }
     showResults(sum)
+    return sum
 }
 
 kata16()
@@ -288,6 +304,7 @@ function kata17() {
         }
     }
     showResults(min)
+    return min
 
 }
 
@@ -295,13 +312,16 @@ kata17()
 
 function kata18() {
     let value = sampleArray.length, max = -Infinity
+    let result = 0
     titleKata(18)
     while (value--) {
         if (sampleArray[value] > max) {
             max = sampleArray[value]
+            result = max
         }
     }
     showResults(max)
+    return max
 }
 
 kata18()
