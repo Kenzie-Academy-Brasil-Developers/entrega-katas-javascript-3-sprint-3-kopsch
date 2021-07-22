@@ -116,7 +116,7 @@ kata5()
 function kata6() {
     let array = ""
     titleKata(6)
-    for (let i = 0; i <= 100; i++) {
+    for (let i = 1; i <= 100; i++) {
         if (i % 3 === 0) {
             if (array === "") {
                 array+= i
@@ -134,7 +134,7 @@ kata6()
 function kata7() {
     let array = ""
     titleKata(7)
-    for (let i = 0; i <= 100; i++) {
+    for (let i = 1; i <= 100; i++) {
         if (i % 7 === 0) {
             if (array === "") {
                 array+= i
