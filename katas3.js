@@ -32,7 +32,7 @@ function kata1() {
     let array = ""
     titleKata(1)
     for (let i = 0; i <= 25; i++) {
-        if (i === 0) {
+        if (array === "") {
             array+= i
         } else {
             array += ", " + i
@@ -49,7 +49,7 @@ function kata2() {
     let array = ""
     titleKata(2)
     for (let i = 25; i >= 0; i--) {
-        if (i === 25) {
+        if (array === "") {
             array+= i
         } else {
             array += ", " + i
@@ -65,7 +65,7 @@ function kata3() {
     let array = ""
     titleKata(3)
     for (let i = -25; i <= -1; i++) {
-        if (i === -25) {
+        if (array === "") {
             array+= i
         } else {
             array += ", " + i
@@ -81,7 +81,7 @@ function kata4() {
     let array = ""
     titleKata(4)
     for (let i = -1; i >= -25; i--) {
-        if (i === -1) {
+        if (array === "") {
             array+= i
         } else {
             array += ", " + i
@@ -98,7 +98,7 @@ function kata5() {
     titleKata(5)
     for (let i = -25; i <= 25; i++) {
         if (i % 2 !== 0) {
-            if (i === -25) {
+            if (array === "") {
                 array+= i
             } else {
                 array += ", " + i
@@ -116,7 +116,7 @@ function kata6() {
     titleKata(6)
     for (let i = 0; i <= 100; i++) {
         if (i % 3 === 0) {
-            if (i === 0) {
+            if (array === "") {
                 array+= i
             } else {
                 array += ", " + i
@@ -134,7 +134,7 @@ function kata7() {
     titleKata(7)
     for (let i = 0; i <= 100; i++) {
         if (i % 7 === 0) {
-            if (i === 0) {
+            if (array === "") {
                 array+= i
             } else {
                 array += ", " + i
@@ -152,7 +152,7 @@ function kata8() {
     titleKata(8)
     for (let i = 100; i >= 0; i--) {
         if (i % 7 === 0 || i % 3 === 0) {
-            if (i === 99) {
+            if (array === "") {
                 array+= i
             } else {
                 array += ", " + i
@@ -170,7 +170,7 @@ function kata9() {
     titleKata(9)
     for (let i = 0; i <= 100; i++) {
         if (i % 5 === 0 && i % 2 !== 0) {
-            if (i === 5) {
+            if (array === "") {
                 array+= i
             } else {
                 array += ", " + i
@@ -187,7 +187,7 @@ function kata10() {
     let array = ""
     titleKata(10)
     for (let i = 0; i < sampleArray.length; i++) {
-        if (i === 0) {
+        if (array === "") {
             array+= sampleArray[i]
         } else {
             array += ", " + sampleArray[i]
@@ -204,7 +204,7 @@ function kata11() {
     titleKata(11)
     for (let i = 0; i < sampleArray.length; i++) {
         if(sampleArray[i] % 2 === 0) {    
-            if (sampleArray[i] === 244) {
+            if (array === "") {
                 array+= sampleArray[i]
             } else {
                 array += ", " + sampleArray[i]
@@ -222,7 +222,7 @@ function kata12() {
     titleKata(12)
     for (let i = 0; i < sampleArray.length; i++) {
         if(sampleArray[i] % 2 !== 0) {    
-            if (i === 0) {
+            if (array === "") {
                 array+= sampleArray[i]
             } else {
                 array += ", " + sampleArray[i]
@@ -240,7 +240,7 @@ function kata13() {
     titleKata(13)
     for (let i = 0; i < sampleArray.length; i++) {
         if(sampleArray[i] % 8 === 0) {    
-            if (sampleArray[i] === 712) {
+            if (array === "") {
                 array+= sampleArray[i]
             } else {
                 array += ", " + sampleArray[i]
@@ -259,7 +259,7 @@ function kata14() {
     titleKata(14)
     for (let i = 0; i < sampleArray.length; i++) {
         square = sampleArray[i]*sampleArray[i]   
-        if (i === 0) {
+        if (array === "") {
             array+= square
         } else {
             array += ", " + square
