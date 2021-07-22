@@ -64,7 +64,7 @@ kata2()
 function kata3() {
     let array = ""
     titleKata(3)
-    for (let i = -25; i <= -1; i++) {
+    for (let i = -1; i >= -25; i--) {
         if (array === "") {
             array+= i
         } else {
@@ -73,14 +73,16 @@ function kata3() {
     }
     showResults(array)
     return array
+
 }
 
 kata3()
 
 function kata4() {
+
     let array = ""
     titleKata(4)
-    for (let i = -1; i >= -25; i--) {
+    for (let i = -25; i <= -1; i++) {
         if (array === "") {
             array+= i
         } else {
@@ -96,7 +98,7 @@ kata4()
 function kata5() {
     let array = ""
     titleKata(5)
-    for (let i = -25; i <= 25; i++) {
+    for (let i = 25; i >= -25; i--) {
         if (i % 2 !== 0) {
             if (array === "") {
                 array+= i
@@ -274,7 +276,7 @@ kata14()
 function kata15() {
     let sum = 0
     titleKata(15)
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i <= 20; i++) {
         sum += i
     }
     showResults(sum)
